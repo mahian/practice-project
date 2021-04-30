@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    background: linear-gradient(to left, rgb(71, 233, 198),rgb(232, 255, 105));
+    height: 100vh;
+    padding-top: 30px;
+}
+
+/*nav-bar design start*/
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 7%;
+}
+.nav-bar .logo{}
+.nav-bar .logo h1{
+    color: rgb(241, 174, 30);
+    font-weight: bold;
+}
+.nav-bar .logo h1 span{
+    color: black;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 0% 0% 15%;
+}
+.nav-bar .item{
+    padding: 0px 27px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    color: rgb(241, 174, 30);
+    transition: 0.2 ease-in-out;
+}
+.nav-bar .btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-bar .btn button{
+    background-color: rgb(241, 174, 30);
+    padding: 5px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+#bg{
+    background-color: rgba(0, 0, 0, 0.267);
+    height: 38px;
+    width: 100%;
+}
+#bars{
+    height: 34px;
+    width: 34px;
+    display: none;
+}
+#bars-2{
+    height: 34px;
+    width: 34px;
+    display: none;
+}
+/*nav-bar design end*/
+
+/*header display design start*/
+
+.display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 7%;
+}
+.display .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11%;
+}
+.display .left button{
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin: 0% 0% 20% 0%;
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(
+        to left, 
+        rgb(111, 247, 183),
+        rgb(189, 250, 77) 
+        );
+}
+.display .left button:focus{
+    background: white;
+}
+.display .left button:hover{
+    border: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.display .right{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.486);
+    height: 75vh;
+    width: 71%;
+    margin: 3% 0% 0% 0%;
+    border-radius: 40px;
+}
+.display .box{
+
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 63%;
+    margin: 12% 0% 0% 11%;
+    display: block;
+}
+#about h1{
+    font-size: 46px;
+    color: white;
+}
+#about p{
+    color: white;
+}
+#about h3{
+    font-size: 25PX;
+    color: white;
+    padding-bottom: 27px;
+}
+#about .btn{
+    display: flex;
+    flex-direction: row;
+}
+#about .btn button{
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 128px;
+    margin: 3% 5% 0% 0%;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #f1ae1e;
+}
+
+
+#skills{
+    color: white;
+    margin: 5% 0% 0% 11%;
+    display: none;
+}
+.skill-box{
+}
+.skill-box span{
+    position: relative;
+    top: 46px;
+}
+.skill-box div{
+    border: 2px solid white;
+    width: 64%;
+    margin: 6% 0% 0% 0%;
+}
+
+
+#protfolio{
+    color: white;
+    margin: 5% 5% 0% 5%;
+    display: none;
+}
+#protfolio .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#protfolio .box{
+    height: 103px;
+    width: 23%;
+    background: linear-gradient(to left, rgb(66, 199, 233), rgb(255, 147, 120), rgb(147, 112, 241));
+    margin: 30px 0px;
+}
+
+/*header display design start*/
+
+/*1000 px width responsive design*/
+
+@media only screen and (max-width: 1000px){
+    #bars{
+        display: block;
+    }
+    #bars-2{
+        display: none;
+    }
+    .nav-bar{
+        flex-wrap: wrap;
+        /* margin: 0% 0%; */
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% 7% 0% 7%;
+        position: absolute;
+        background-color: black;
+        width: 86%;
+        z-index: 1;
+        display: none;
+    }
+    .nav-bar .item{
+        padding: 14px 0px;
+        width: 100%;
+    }
+    .menu a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin: 0% 0% 0% 5%;
+    }
+    .menu .item:hover{
+        background-color: rgb(66, 73, 88);
+        transition: 0.2 ease-in-out;
+    }
+    .nav-bar .btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-bar .btn button{
+        background-color: rgb(241, 174, 30);
+        padding: 5px 30px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+    }
+    #bg{
+        background-color: rgba(0, 0, 0, 0.267);
+        height: 38px;
+        width: 100%;
+    }
+    .skill-box div {
+        margin: 10% 0% 0% 0%;
+    }
+    .display{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0% 0%;
+    }
+}
+
+/* 796 px width responsive design */
+
+@media only screen and (max-width: 796px){
+    .nav-bar .btn button{
+        display: none;
+    }
+    .nav-bar {
+        margin-left: 11%;
+    }
+    #bars, #bars-2{
+        margin-left: 57%;
+    }
+    /* .nav-bar{
+        flex-wrap: wrap;
+        margin: 0% 11% 0% 5%;
+    } */
+    .display{
+        flex-direction: column;
+    }
+    .display .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8%;
+    }
+    .display .left button{
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        height: 39px;
+        width: 27%;
+        margin: 5% 0% 5% 0%;
+        font-size: 17px;
+        font-weight: bold;
+        background: linear-gradient(
+            to left, 
+            rgb(49, 133, 94),
+            rgb(132, 185, 32) 
+            );
+    }
+    .display .right {
+        height: 74vh;
+        width: 100%;
+        margin: 2% 0% 0% 0%;
+        border-radius: 0px;
+    }
+    #about {
+        width: 63%;
+        margin: 12% 0% 0% 11%;
+    }
+}
+
+/* 370 px width responsive design */
+@media only screen and (max-width: 796px){
+    #bars, #bars-2{
+        margin-left: 40%;
+    }
+    .skill-box div {
+        margin: 14% 0% 0% 0%;
+        width: 85%;
+    }
+    #about {
+        width: 80%;
+        margin: 12% 0% 0% 11%;
+    }
+    .display .right {
+        height: 80vh;
+        width: 100%;
+        margin: 2% 0% 0% 0%;
+        border-radius: 0px;
+    }
+    .menu{
+        margin: 11% 0% 0% 0%;
+    }
+}
+
+
